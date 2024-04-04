@@ -18,4 +18,4 @@ def _():
     return "x"
 
 ##############################
-app = default_app()
+application = default_app()

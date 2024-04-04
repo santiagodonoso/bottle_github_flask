@@ -1,4 +1,9 @@
-from bottle import default_app, get, post
+try:
+  import production
+  from mysite.bottle import default_app, get, post
+except:
+  from bottle import default_app, get, post
+
 import git 
 
 # https://GITHUB-TOKEN-HERE@github.com/GITUHB-USERNAME/mysite.git
